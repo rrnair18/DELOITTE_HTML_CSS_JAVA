@@ -8,17 +8,37 @@
 <body>
     <h1>Employee Management</h1>
 
+    <!-- View All Employees -->
     <h2>All Employees</h2>
     <div id="employeeList"></div>
     <button onclick="viewAllEmployees()">View All Employees</button>
 
+    <!-- Add Employee -->
     <h2>Add Employee</h2>
-    <input type="number" id="addId" placeholder="Enter Employee Id">
     <input type="text" id="addFirstName" placeholder="Enter Employee Name">
     <input type="number" id="addSalary" placeholder="Enter Salary">
     <button onclick="addEmployee()">Add Employee</button>
     <div id="addResult"></div>
 
+    <!-- View Employee by ID -->
+    <h2>View Employee by ID</h2>
+    <input type="number" id="viewEmployeeId" placeholder="Enter Employee ID">
+    <button onclick="viewEmployeeById()">View Employee</button>
+    <div id="viewEmployeeResult"></div>
+
+    <!-- Update Employee -->
+    <h2>Update Employee</h2>
+    <input type="number" id="updateEmployeeId" placeholder="Enter Employee ID">
+    <input type="text" id="updateFirstName" placeholder="Enter Employee Name">
+    <input type="number" id="updateSalary" placeholder="Enter Salary">
+    <button onclick="updateEmployee()">Update Employee</button>
+    <div id="updateResult"></div>
+
+    <!-- Delete Employee -->
+    <h2>Delete Employee</h2>
+    <input type="number" id="deleteEmployeeId" placeholder="Enter Employee ID">
+    <button onclick="deleteEmployee()">Delete Employee</button>
+    <div id="deleteResult"></div>
 
     <script src="script.js"></script>
 </body>
